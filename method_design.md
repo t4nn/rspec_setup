@@ -2,30 +2,21 @@
 > 
 > ## 1. Describe the Problem
 > 
-> Typically you will be given a short statement that does this called a user
-> story. In industry, you may also need to ask further questions to clarify
-> aspects of the problem.
-> 
+As a user
+So that I can keep track of my tasks
+I want to check if a text includes the string #TODO.
+
 > ## 2. Design the Method Signature
-> 
-> The signature of a method includes:
-> 
-> * The name of the method.
-> * What parameters it takes, their names and data types.
-> * What it returns and the data type of that value.
-> * Any other side effects it might have.
-> 
-> Steps 3 and 4 then operate as a cycle.
-> 
+<!-- to_do(text)
+text = string
+return = boolean -->
+
 > ## 3. Create Examples as Tests
-> 
-> These are examples of the method being called with particular arguments, and
-> what the method should return in each situation.
-> 
-> For complex challenges you might want to come up with a list of examples first
-> and then test-drive them one by one. For simpler ones you might just dive
-> straight into writing a test for the first example you want to address.
-> 
+<!-- to_do? ("#TODO") = true
+to_do? ("todo") = false
+to_do? ("TODO") = false -->
+
+
 > ## 4. Implement the Behaviour
 > 
 > For each example you create as a test, implement the behaviour that allows the

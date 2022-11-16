@@ -1,11 +1,13 @@
-require 'make_snippet'
+require "make_snippet"
 
 RSpec.describe "make_snippet" do
-    it "returns first 5 letters of string" do
-        result = strings[0..5] + "..."
-        expect(result).to eq "strings..."
-    end
+  it "given a string argument, it returns 5 words" do
+    result = make_snippet("Hello everyone I am Tanya")
+    expect(result).to eq "Hello everyone I am Tanya"
+  end
+
+  it "given a string argument, returns first 5 words with ... at end" do
+    result = make_snippet("Hello everyone I am Tanya Sahin")
+    expect(result).to eq "Hello everyone I am Tanya..."
+  end
 end
-
-
-    

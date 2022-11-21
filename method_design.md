@@ -7,14 +7,19 @@ So that I can keep track of my tasks
 I want to check if a text includes the string #TODO.
 
 > ## 2. Design the Method Signature
-<!-- to_do(text)
-text = string
-return = boolean -->
+> to_do(text)
+text = is a string with words in it
+return = will be a boolean to verify if its true or false
 
 > ## 3. Create Examples as Tests
-<!-- to_do? ("#TODO") = true
-to_do? ("todo") = false
-to_do? ("TODO") = false -->
+to_do.include?(™TODO") => true
+to_do.include?("#todo) => false
+to_do.include?("#tonotdo") => false
+to_do.include?("# TODO") => false
+to_do.include?(" ") => false
+to_do.include?(this is my #TODO) => true
+
+
 
 
 > ## 4. Implement the Behaviour
